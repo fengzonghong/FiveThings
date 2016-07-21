@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarSize="15dp">
 
   <RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,17 +22,31 @@
         android:src="@drawable/alpha"
         android:layout_alignRight="@+id/button4"
         android:layout_alignEnd="@+id/button4" />
+      <ImageView
 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:scaleType="centerCrop"
+          android:src="@drawable/pikaqiu"
+          android:layout_below="@+id/background"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignBottom="@+id/button3"
+          android:id="@+id/imageView" />
     <Button
         android:layout_weight="1"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="exercising"
-        android:text="exercising this whole time"
+        android:text="Exercising whole time"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
         android:layout_below="@+id/background"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button4"
         android:layout_alignRight="@+id/button2"
         android:layout_alignEnd="@+id/button2" />
 
@@ -39,11 +55,14 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button"
         android:onClick="EVERYWHERE"
-        android:text="Pokémon EVERYWHERE" />
+        android:text="Pokémon EVERYWHERE"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_weight="1"
@@ -52,11 +71,12 @@
         android:layout_height="wrap_content"
         android:onClick="searching"
         android:text="searching for Pokémon"
-        android:layout_alignTop="@+id/button5"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_below="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_weight="1"
@@ -65,21 +85,29 @@
         android:layout_height="wrap_content"
         android:onClick="Poké"
         android:text="Poké Stops and Gyms"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/button" />
+        android:textAllCaps="false"
+        android:layout_above="@+id/button5"
+        android:layout_alignTop="@+id/button2" />
 
     <Button
         android:layout_weight="1"
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/button4"
         android:onClick="dangerous"
         android:text="a little dangerous"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+        android:layout_alignStart="@+id/button4"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button2" />
 
     <TextView
         android:id="@+id/textView5"
@@ -87,12 +115,51 @@
         android:layout_height="wrap_content"
         android:text="Looking back at how players consumed Pokémon Go this weekend, here are five things we learned:"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#ea1010"
+        android:textColor="#25fb05"
         android:textSize="26sp"
         android:layout_above="@+id/button"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:text="5 Pokemon GO"
+          android:id="@+id/textView"
+          android:textSize="56sp"
+          android:shadowColor="#fbcb0c"
+          android:layout_marginTop="35dp"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:text="Notices"
+          android:id="@+id/textView2"
+          android:layout_below="@+id/textView"
+          android:layout_centerHorizontal="true"
+          android:textSize="30sp"
+          android:shadowColor="#fbcb0c"
+          android:textColor="#040404" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Official Web"
+          android:id="@+id/button6"
+          android:onClick="web"
+          android:textAllCaps="false"
+          android:layout_below="@+id/background"
+          android:layout_alignRight="@+id/textView"
+          android:layout_alignEnd="@+id/textView"
+          android:layout_toEndOf="@+id/button"
+          android:layout_alignLeft="@+id/button4"
+          android:layout_alignStart="@+id/button4" />
 
 
-   </RelativeLayout>
+  </RelativeLayout>
 </ScrollView>

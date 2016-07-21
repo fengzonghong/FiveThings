@@ -3,6 +3,7 @@ package com.example.android.myapplication;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -44,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent5 = new Intent(this, Page6.class);
         startActivity(intent5);
     }
-
+    public void web (View v)
+    {
+        String url = "http://www.pokemon.com/us/pokemon-video-games/pokemon-go/";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
 }
 
