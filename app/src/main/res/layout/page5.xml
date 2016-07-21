@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/france"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#d8f3e40d"
+        android:gravity="center_vertical"
+        android:text="       Churches are really popular places, for some reason. Malls, too. There's also the occasional house connected to the Pokémon universe. The house of Boon Sheridan, a Massachusetts resident, has been designated a Pokémon Gym."
+        android:id="@+id/textView3"
+        android:textSize="26sp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

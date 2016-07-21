@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/beta"
+        android:id="@+id/background"
+        android:layout_centerVertical="true"/>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#eccd07"
+        android:text="    “This is the first time I’ve gone out and walked for hours in a long time,” said Joshua Loughren, 16, who spent his Sunday at NorthPark Center mall in Dallas catching Pokémon. “That’s good.”"
+        android:id="@+id/textView4"
+        android:textSize="26sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
